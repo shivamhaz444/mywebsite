@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./photo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img  src="./photo.svg" alt="GeekHaven">
+        </div>
+            <h1>Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header> 
+    <main>
+        <section class="home" id = "home">
+            <div class = "particles" id = "particles-js"></div>
+            <div class="name">
+                <h1>Shivam Kumar </h1><br>
+                <h2>IIITA'24</h2>
+            </div>
+        </section>
+        <section  class = "about" id = "about">
+            <div class="image">
+                <img src="./Untitled.png" alt="shivam">
+            </div>
+            <div class="info">
+                Hey,<br>    Myself Shivam Kumar ,who likes to spend much of his time travelling and listening to music.
+              <br>  <br> I have always been a storyteller ,long before i stumbled upon  programming.
+               <br> <br> It all started with
+                 Writing silly imaginary pieces ,when I was younger ,until the day ,I bought my first personal computer and discovered another medium to explore myself.
+               <br> <br> Noticing minute details of everything that I encounter is the best part of my habits.Even though story- telling is my hobby , I find a reflection of myself in them.
+               <br> <br> There is no surprise that travelling is the love of my life,but exploring things in very detail is also 
+                The blood in my veins.I am endlessly inspired by nature and adventures.I love waking up in the new horizons,making friends with people and exploring the world.
+               <br><br> Think we could create something historical together ? feel free to contact by following links given below.
+            </div>
+        </section>
+        <section class = "contact" id = "contact">
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/shivam-kumar-a5b862202"><i id = "slink"class="fab fa-linkedin-in"></i><div class="anim linkedin">Shivam Kumar</div></a></li>
+                    <li><a href="https://www.facebook.com/shivam.hazari.54"><i id = "slink" class="fab fa-facebook-f"></i><div class="anim facebook">shivam.hazari.54</div></a></li>
+                    <li><a href="https://www.instagram.com/shivam_sts996/?hl=en"><i id = "slink" class="fab fa-instagram" ></i><div class="anim instagram">shivam_sts996</div> </a> </li>
+                    <li><a href="https://github.com/shivamhaz444"><i id = "slink" class="fab fa-github"></i><div class="anim github">shivamhaz444</div></a> </li>
+                </ul>
+            </div>
+            <div class="details">
+            <div class="contact-me"><h1>Contact</h1></div>
+          <form action= "mailto:shivamhazari8@gmail.com" method="POST"
+            enctype="multipart/form-data" name="EmailForm">
+            <input type="text" id = "fullname"name="full-name" placeholder="Full Name" class = "form-control">    
+            <br><input type="text" id = "email"name="email" placeholder="E-Mail" class = "form-control">    
+            <br><textarea name="message" rows="5" name = "message" placeholder="Message..." class="form-control"></textarea>
+            <br><input type="submit" value="Send"  class = "form-control" id = "button" >
+        
+        </form>
+    </div>
+        </section>
+    </main>   
+    <script src="./javascript/particles.min.js"></script>
+    <script src="./javascript/app.js"></script>
+</body>
+</html>
