@@ -62,15 +62,27 @@
           <form action= "mailto:shivamhazari8@gmail.com" method="POST"
             enctype="multipart/form-data" name="EmailForm">
             <input type="text" id = "fullname"name="full-name" placeholder="Full Name" class = "form-control">    
-            <br><input type="text" id = "email"name="email" placeholder="E-Mail" class = "form-control">    
-            <br><textarea name="message" rows="5" name = "message" placeholder="Message..." class="form-control"></textarea>
-            <br><input type="submit" value="Send"  class = "form-control" id = "button" >
+            <br>
+            <input type="text"id="country"name="country"placeholder="Country Name"class="form-control">
+            <br>
+            <input type="text" id = "email"name="email" placeholder="E-Mail" class = "form-control">    
+            <br>
+            <textarea name="message" rows="5" name = "message" placeholder="Message..." class="form-control"></textarea>
+            <br>
+            <input type="submit" value="Send"  class = "form-control" id = "button" >
         
         </form>
     </div>
         </section>
     </main>   
+      <a class="top-link hide" style="position:fixed;z-index:1000;"href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <span class="screen-reader-text">Back to top</span>
+      </a>
     <script src="./javascript/particles.min.js"></script>
     <script src="./javascript/app.js"></script>
+    <footer>
+        <a id="back-to-top" href="#">Top</a>
+    </footer>
 </body>
 </html>

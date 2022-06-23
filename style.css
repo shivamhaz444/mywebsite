@@ -16,13 +16,13 @@ header{
     box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
     position: sticky;
     top: 0px;
-    background-color: white;
-    width: 95%;
-    z-index: 20;
+    background-color:white;
+    width:100%;
+    z-index: 1000;
     
 }
 .logo img{
-    height: 4.5rem; 
+    height: 3rem; 
 }
 
 
@@ -65,6 +65,7 @@ section{
     background-image: linear-gradient(to right ,rgba(0, 0, 0, 0.7),rgba(67, 67, 67, 0.7) ) , url("./hero.jpg");
     background-size: cover;
     background-position: center;
+    width:auto;
     
     
 }
@@ -105,7 +106,88 @@ section{
     height: 100vh;
     width: 100vw;
     position: absolute;
+    
 }
+body {
+    height: 2000px;
+    position: relative;
+  }
+  
+  .intro-copy {
+    padding: 1em;
+    margin: 50vh auto;
+    max-width: 15em;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .top-link {
+    transition: all 0.25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    padding: 0.25em;
+    width: 80px;
+    height: 80px;
+    background-color: #F8F8F8;
+  }
+  .top-link.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  .top-link.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .top-link svg {
+    fill: #000;
+    width: 24px;
+    height: 12px;
+  }
+  .top-link:hover {
+    background-color: #E8E8E8;
+  }
+  .top-link:hover svg {
+    fill: #000000;
+  }
+  
+  .screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  .screen-reader-text:focus {
+    display: block;
+    top: 5px;
+    left: 5px;
+    z-index: 100000;
+    clip-path: none;
+    background-color: #eee;
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    line-height: normal;
+    color: #444;
+    font-size: 1em;
+    clip: auto !important;
+  }
 .about{
     background-image: linear-gradient(to right, rgba(0, 200, 255, 0.7),rgba(146, 254, 157, 0.7)), url("./image.jpeg");
     z-index: 10;
@@ -113,6 +195,7 @@ section{
     display: flex;
     background-position: center;
     background-size: cover;
+    width:auto;
 }
 .image {
     position: absolute;
@@ -135,6 +218,7 @@ img{
     height: 110vh;
     flex-direction: column;
     background-size: cover;
+    width:auto;
     
 }
 .contact-me h1{
@@ -142,7 +226,8 @@ img{
     flex-direction: column;
     margin-top: 3%;
     margin-left: 45%;
-    color: white;
+    color:aquamarine;
+    margin-top: 0.001%;
 }
 
 
@@ -168,7 +253,7 @@ img{
 }
 .anim{
     font-size: 2rem;
-    color: white;
+    color:aqua;
     margin-top: -30%;
     margin-left: -30%;
     
@@ -201,7 +286,7 @@ img{
     border-top: 5px solid rgba(0, 0, 0, 0.7);
 }
 form{
-    padding-top: 4%;
+    padding-top: 1%;
     padding-left: 34%;
 }
 .form-control {
@@ -210,12 +295,13 @@ form{
     padding: 0.5rem;
     font-size: 1.5rem;
     margin-bottom: 2%;
-    font-family: 'Dancing Script', cursive;
+    font-family:sans-serif;
   }
 textarea{
     padding-left: 0;
 
 }
 #button{
-    border-radius: 10%;
+    z-index: 10000;
 }
+   
